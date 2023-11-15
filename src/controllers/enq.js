@@ -57,3 +57,11 @@ const updateEnquiry = asyncHandler(async (req, res) => {
       throw new Error(error);
     }
 })
+
+module.exports = {
+    addEnquiry,
+    updateEnquiry,
+    deleteEnquiry,
+    getAllEnquiry,
+    getEnquiry
+}
