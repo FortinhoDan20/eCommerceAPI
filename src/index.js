@@ -26,7 +26,8 @@ app.use("/api-user", require("./routes/auth"));
 app.use('/api-product', require('./routes/product'))
 app.use('/api-blog', require('./routes/blog'))
 app.use('/api-category', require('./routes/category'))
-app.use('/api-caterory-prod', require('./routes/categoryProd'))
+app.use('/api-category-prod', require('./routes/categoryProd'))
+app.use('/api-enquiry', require('./routes/enq'))
 
 app.listen(port, () => {
   console.log(`Server is running at PORT ${port}`);
