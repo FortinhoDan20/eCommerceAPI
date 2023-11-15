@@ -7,7 +7,7 @@ router.post('/', protect, isAdmin, addCategory)
 
 router.patch('/:id', protect, isAdmin, updateCategory)
 
-router.delete('/:id', protectn, isAdmin, deleteCategory)
+router.delete('/:id', protect, isAdmin, deleteCategory)
 
 router.get('/', getAllCategoryProd)
 
