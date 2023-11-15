@@ -24,6 +24,8 @@ app.use(errorHandler)
 
 app.use("/api-user", require("./routes/auth"));
 app.use('/api-product', require('./routes/product'))
+app.use('/api-blog', require('./routes/blog'))
+app.use('/api-category', require('./routes/category'))
 
 app.listen(port, () => {
   console.log(`Server is running at PORT ${port}`);
