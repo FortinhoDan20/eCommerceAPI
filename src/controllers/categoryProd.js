@@ -36,7 +36,7 @@ const updateCategory = asyncHandler(async (req, res) => {
       throw new Error(error);
     }
   });
-  const getCategory = asyncHandler(async (req, res) => {
+  const getCategoryProd = asyncHandler(async (req, res) => {
     const { id } = req.params;
     validateMongoDbId(id);
     try {
@@ -46,7 +46,7 @@ const updateCategory = asyncHandler(async (req, res) => {
       throw new Error(error);
     }
   });
-  const getallCategory = asyncHandler(async (req, res) => {
+  const getAllCategoryProd = asyncHandler(async (req, res) => {
     try {
       const getallCategory = await Category.find();
       res.json(getallCategory);
@@ -59,6 +59,6 @@ const updateCategory = asyncHandler(async (req, res) => {
     addCategory,
     updateCategory,
     deleteCategory,
-    getCategory,
-    getallCategory,
+    getCategoryProd,
+    getAllCategoryProd,
   };
