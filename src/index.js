@@ -30,6 +30,7 @@ app.use('/api-category-prod', require('./routes/categoryProd'))
 app.use('/api-enquiry', require('./routes/enq'))
 app.use('/api-coupon', require('./routes/coupon'))
 app.use('/api-color', require('./routes/color'))
+app.use('/api-brand', require('./routes/brand'))
 
 app.listen(port, () => {
   console.log(`Server is running at PORT ${port}`);
