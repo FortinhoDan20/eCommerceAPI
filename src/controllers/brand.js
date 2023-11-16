@@ -1,5 +1,6 @@
 const Brand = require('../models/brand')
 const asyncHandler = require("express-async-handler");
+const validateMongoDbId = require('../utilis/validateMongodbId');
 
 
 
@@ -78,3 +79,11 @@ const updateBrand = asyncHandler(async (req, res) => {
       throw new Error(error);
     }
   });
+
+  module.exports = {
+    createBrand,
+    updateBrand,
+    deleteBrand,
+    getAllBrands,
+    getBrand
+  }
