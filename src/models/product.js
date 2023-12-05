@@ -43,12 +43,7 @@ const productScheme = mongoose.Schema({
         type: Number,
         default: 0,
       },
-      images: [
-        {
-          public_id: String,
-          url: String,
-        },
-      ],
+      images: [],
       color: [],
       tags: String,
       ratings: [
@@ -59,7 +54,7 @@ const productScheme = mongoose.Schema({
         },
       ],
       totalRating: {
-        type: String,
+        type: Number,
         default: 0,
       },
 }, { timestamps: true })
